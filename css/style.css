@@ -7,6 +7,7 @@
   --dark-color: #212529;
   --accent-color: #ff6b6b;
   --success-color: #20c997;
+  --background-color: #5f7b9e; /* Nouvelle couleur bleu foncé pastel */
 }
 
 * {
@@ -19,7 +20,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
   color: var(--text-color);
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: var(--background-color); /* Remplacé le dégradé par la couleur bleu foncé pastel */
   min-height: 100vh;
 }
 
@@ -150,7 +151,7 @@ main {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2.5rem;
-  color: var(--primary-color);
+  color: var(--light-color); /* Changé pour un meilleur contraste avec le fond bleu */
 }
 
 .section-title::after {
