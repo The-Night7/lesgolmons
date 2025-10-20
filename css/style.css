@@ -80,6 +80,54 @@ nav ul li a:hover, nav ul li a.active {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Styles pour le menu déroulant */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown .nav-link {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown .nav-link i {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown:hover .nav-link i {
+  transform: rotate(180deg);
+}
+
 .hero {
   background-image: url('../img/banner.png');
   background-size: cover;
@@ -263,15 +311,15 @@ footer {
   .header-content {
     flex-direction: column;
   }
-  
+
   nav ul {
     margin-top: 1rem;
   }
-  
+
   .hero h2 {
     font-size: 2rem;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
