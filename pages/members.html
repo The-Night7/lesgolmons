@@ -7,469 +7,396 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <style>
-        /* Styles spécifiques à la page des membres */
-        .overlay {
-            background-color: rgba(0, 0, 0, 0.85);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
-        body {
-            background-image: url('../img/banner.png');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        
-        .members-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-        
-        .position-section {
-            margin-bottom: 40px;
-        }
-        
-        .position-title {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 10px;
-            color: var(--light-color);
-        }
-
-        .position-title h2 {
-            margin: 0;
-            font-size: 1.8em;
-        }
-
-        .position-icon {
-            font-size: 1.8em;
-            margin-right: 10px;
-        }
-
-        .member-card {
-            background-color: rgba(30, 30, 30, 0.8);
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s, box-shadow 0.3s;
-            border-left: 4px solid;
-            color: var(--light-color);
-        }
-
-        .member-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        }
-
-        .vice-master {
-            border-color: #ffd700; /* Or */
-        }
-
-        .guide {
-            border-color: #1e90ff; /* Bleu */
-        }
-
-        .member {
-            border-color: #32cd32; /* Vert */
-        }
-
-        .novice {
-            border-color: #ffff00; /* Jaune */
-        }
-
-    </style>
 </head>
 <body>
-    <div class="overlay">
-        <header>
-            <div class="container header-content">
-                <div class="logo">
-                    <img src="../img/logo_guilde.png" alt="Logo Les Golmons">
-                    <h1>Les Golmons</h1>
-                    </div>
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li><a href="recrutement.html">Recrutement</a></li>
-                        <li><a href="guide-tina.html">Guide Tina's Madness</a></li>
-                        <li><a href="trophees.html">Trophées</a></li>
-                        <li><a href="metiers.html">Guide Métiers</a></li>
-                        <li><a href="members.html" class="active">Liste des membres</a></li>
-                    </ul>
-                </nav>
-                    </div>
-        </header>
-
-        <main class="container">
-            <section class="section">
-                <h2 class="section-title">Membres de la Guilde</h2>
-
-                <div class="stats">
-                    <h3>Statistiques de la Guilde</h3>
-                    <div class="stats-grid">
-                        <div class="stat-card">
-                            <div class="stat-number">45</div>
-                            <div class="stat-label">Membres Uniques</div>
-    </div>
-                        <div class="stat-card">
-                            <div class="stat-number">1</div>
-                            <div class="stat-label">Vice Master</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">1</div>
-                            <div class="stat-label">Guide</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">36</div>
-                            <div class="stat-label">Membres</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">8</div>
-                            <div class="stat-label">Novices</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">49</div>
-                            <div class="stat-label">Niveau Moyen</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Vice Master Section -->
-                <div class="position-section">
-                    <div class="position-title">
-                        <span class="position-icon">🔶</span>
-                        <h2>Vice Master</h2>
-                    </div>
-                    <div class="members-grid">
-                        <div class="member-card vice-master">
-                            <h3 class="member-name">pakapowa</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge mid-level">52</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Guide Section -->
-                <div class="position-section">
-                    <div class="position-title">
-                        <span class="position-icon">🔷</span>
-                        <h2>Guide</h2>
-                    </div>
-                    <div class="members-grid">
-                        <div class="member-card guide">
-                            <h3 class="member-name">Kaffu</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">58</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Members Section -->
-                <div class="position-section">
-                    <div class="position-title">
-                        <span class="position-icon">🟢</span>
-                        <h2>Membres</h2>
-                    </div>
-                    <div class="members-grid">
-                        <div class="member-card member">
-                            <h3 class="member-name">5n5</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">57</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">ALLAN</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">58</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Bissckette</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">58</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Bissckotte</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">58</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">BloodCrystalINC</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">54</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">BrunKley</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">58</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Califa</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">51</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Cesar</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge mid-level">38</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">HappyBog</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">56</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Honrya</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge mid-level">40</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">HunterX</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge mid-level">30</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Jishuzo</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge mid-level">36</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Kalash</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">53</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Kazuko</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">58</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Krugz</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">58</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Kuro</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge low-level">23</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Matyssa</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">55</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Maya</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">58</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Moha</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">58</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Mythrial</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge mid-level">35</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Oneblade</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">58</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Pati</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">57</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">RedNox</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">58</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Rei</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge mid-level">45</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Rekkusa</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge mid-level">36</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Ryokai</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">56</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Ryoo</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">57</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Shadow</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">50</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Shayde</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">55</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Sorren</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">56</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Stupefiant</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">56</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Tenyari</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge mid-level">49</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Tsuky</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge low-level">25</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Vega</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">58</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Yami</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">54</span>
-                            </div>
-                        </div>
-                        <div class="member-card member">
-                            <h3 class="member-name">Zarito</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge low-level">27</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Novices Section -->
-                <div class="position-section">
-                    <div class="position-title">
-                        <span class="position-icon">🟡</span>
-                        <h2>Novices</h2>
-                    </div>
-                    <div class="members-grid">
-                        <div class="member-card novice">
-                            <h3 class="member-name">AshaF</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">57</span>
-                            </div>
-                        </div>
-                        <div class="member-card novice">
-                            <h3 class="member-name">Daveee</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">54</span>
-                            </div>
-                        </div>
-                        <div class="member-card novice">
-                            <h3 class="member-name">Eyestaki</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">55</span>
-                            </div>
-                        </div>
-                        <div class="member-card novice">
-                            <h3 class="member-name">Featherine</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge mid-level">47</span>
-                            </div>
-                        </div>
-                        <div class="member-card novice">
-                            <h3 class="member-name">RockNir</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">55</span>
-                            </div>
-                        </div>
-                        <div class="member-card novice">
-                            <h3 class="member-name">SenkiDreams</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">58</span>
-                            </div>
-                        </div>
-                        <div class="member-card novice">
-                            <h3 class="member-name">Trylax</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">50</span>
-                            </div>
-                        </div>
-                        <div class="member-card novice">
-                            <h3 class="member-name">Yukka</h3>
-                            <div class="member-level">
-                                Niveau: <span class="level-badge high-level">58</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="../index.html" class="btn btn-primary">Retour à l'accueil</a>
-            </section>
-        </main>
-
-        <footer>
-            <div class="container">
-                <div class="social-links">
-                    <a href="https://discord.gg/golmon" target="_blank"><i class="fab fa-discord"></i></a>
-                </div>
-                <p>&copy; 2025 Les Golmons - Guilde Blue Protocol Star Resonance</p>
-                <p>Code de guilde : 52625</p>
+<div class="overlay">
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../img/logo_guilde.png" alt="Logo Les Golmons">
+                <h1>Les Golmons</h1>
             </div>
-        </footer>
-    </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="recrutement.html">Recrutement</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Guides <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="guide-tina.html">Guide Tina's Madness</a>
+                            <a href="trophees.html">Trophées</a>
+                            <a href="metiers.html">Guide Métiers</a>
+                        </div>
+                    </li>
+                    <li><a href="members.html" class="active">Liste des membres</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2 class="section-title">Membres de la Guilde</h2>
+
+            <div class="stats">
+                <h3>Statistiques de la Guilde</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">45</div>
+                        <div class="stat-label">Membres Uniques</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Vice Master</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Guide</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">36</div>
+                        <div class="stat-label">Membres</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Novices</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">49</div>
+                        <div class="stat-label">Niveau Moyen</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vice Master Section -->
+            <div class="position-section">
+                <div class="position-title">
+                    <span class="position-icon">🔶</span>
+                    <h2>Vice Master</h2>
+                </div>
+                <div class="members-grid">
+                    <div class="member-card vice-master">
+                        <h3 class="member-name">pakapowa</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge mid-level">52</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guide Section -->
+            <div class="position-section">
+                <div class="position-title">
+                    <span class="position-icon">🔷</span>
+                    <h2>Guide</h2>
+                </div>
+                <div class="members-grid">
+                    <div class="member-card guide">
+                        <h3 class="member-name">Kaffu</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">58</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Members Section -->
+            <div class="position-section">
+                <div class="position-title">
+                    <span class="position-icon">🟢</span>
+                    <h2>Membres</h2>
+                </div>
+                <div class="members-grid">
+                    <div class="member-card member">
+                        <h3 class="member-name">5n5</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">57</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">ALLAN</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">58</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Bissckette</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">58</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Bissckotte</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">58</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">BloodCrystalINC</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">54</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">BrunKley</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">58</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Califa</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">51</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Cesar</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge mid-level">38</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">HappyBog</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">56</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Honrya</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge mid-level">40</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">HunterX</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge mid-level">30</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Jishuzo</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge mid-level">36</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Kalash</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">53</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Kazuko</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">58</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Krugz</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">58</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Kuro</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge low-level">23</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Matyssa</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">55</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Maya</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">58</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Moha</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">58</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Mythrial</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge mid-level">35</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Oneblade</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">58</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Pati</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">57</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">RedNox</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">58</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Rei</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge mid-level">45</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Rekkusa</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge mid-level">36</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Ryokai</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">56</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Ryoo</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">57</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Shadow</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">50</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Shayde</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">55</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Sorren</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">56</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Stupefiant</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">56</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Tenyari</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge mid-level">49</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Tsuky</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge low-level">25</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Vega</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">58</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Yami</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">54</span>
+                        </div>
+                    </div>
+                    <div class="member-card member">
+                        <h3 class="member-name">Zarito</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge low-level">27</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Novices Section -->
+            <div class="position-section">
+                <div class="position-title">
+                    <span class="position-icon">🟡</span>
+                    <h2>Novices</h2>
+                </div>
+                <div class="members-grid">
+                    <div class="member-card novice">
+                        <h3 class="member-name">AshaF</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">57</span>
+                        </div>
+                    </div>
+                    <div class="member-card novice">
+                        <h3 class="member-name">Daveee</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">54</span>
+                        </div>
+                    </div>
+                    <div class="member-card novice">
+                        <h3 class="member-name">Eyestaki</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">55</span>
+                        </div>
+                    </div>
+                    <div class="member-card novice">
+                        <h3 class="member-name">Featherine</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge mid-level">47</span>
+                        </div>
+                    </div>
+                    <div class="member-card novice">
+                        <h3 class="member-name">RockNir</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">55</span>
+                        </div>
+                    </div>
+                    <div class="member-card novice">
+                        <h3 class="member-name">SenkiDreams</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">58</span>
+                        </div>
+                    </div>
+                    <div class="member-card novice">
+                        <h3 class="member-name">Trylax</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">50</span>
+                        </div>
+                    </div>
+                    <div class="member-card novice">
+                        <h3 class="member-name">Yukka</h3>
+                        <div class="member-level">
+                            Niveau: <span class="level-badge high-level">58</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="../index.html" class="btn btn-primary">Retour à l'accueil</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://discord.gg/golmon" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+            <p>&copy; 2025 Les Golmons - Guilde Blue Protocol Star Resonance</p>
+            <p>Code de guilde : 52625</p>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
